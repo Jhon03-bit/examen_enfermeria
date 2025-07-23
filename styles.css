@@ -1,0 +1,121 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #e9f0f2;
+  color: #222;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  color: #004d40;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.question {
+  margin-bottom: 25px;
+}
+
+.options label {
+  display: block;
+  margin: 8px 0;
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+}
+
+button {
+  background-color: #00796b;
+  color: white;
+  border: none;
+  padding: 12px 28px;
+  font-size: 17px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 25px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+.hidden {
+  display: none;
+}
+
+.incorrect {
+  color: #d32f2f;
+  background-color: #fdecea;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.correct {
+  color: #388e3c;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 16px;
+  border: 2px solid #00796b;
+  border-radius: 6px;
+  margin-top: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #004d40;
+  outline: none;
+}
+
+/* Image animations */
+.animated-image {
+  max-width: 100%;
+  height: auto;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-duration: 1.5s;
+}
+
+.top-image {
+  animation-name: fadeInDown;
+}
+
+.bottom-image {
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
